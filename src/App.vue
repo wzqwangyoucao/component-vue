@@ -1,27 +1,62 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-05-12 20:39:48
+ * @LastEditTime: 2020-05-14 09:24:30
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /component-vue/src/App.vue
+ -->
 <template>
   <div id="app">
-    <SwitchEle v-model="value1" activeColor="#13ce66" inactiveColor="#ff4949" @change="readVal"/>
-    <SwitchEle v-model="value2" activeColor="#007766" inactiveColor="#000049" @change="readVal"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import SwitchEle from './components/Switch';
-export default {
-  name: 'App',
-  components: {SwitchEle},
-  data () {
-    return {
-      value1: true,
-      value2: false
-    };
-  },
-  methods: {
-    readVal () {
-      console.log(this.value1);
-    }
-  }
-};
+export default {};
 </script>
-<style>
+<style lang="less">
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+  margin: 0;
+  padding: 0
+}
+fieldset,img {
+  border: 0
+}
+img {
+  display: block
+}
+address,caption,cite,code,dfn,th,var {
+  font-style: normal;
+  font-weight: normal
+}
+ul,ol {
+  list-style: none
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun","宋体"
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+select,input {
+  vertical-align: middle
+}
+select,input,textarea {
+  font-size: 12px;
+  margin: 0
+}
+input[type="text"],input[type="password"],textarea {
+  outline-style: none;
+  -webkit-appearance: none
+}
+textarea {
+  resize: none
+}
+table {
+  border-collapse: collapse
+}
 </style>
